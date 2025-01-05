@@ -2,13 +2,15 @@ package model;
 
 public class Parcel {
     private String parcelId;
+    private int daysIn;
     private double weight;
     private String dimensions;
     private boolean isProcessed;
 
     // Constructor
-    public Parcel(String parcelId, double weight, String dimensions) {
+    public Parcel(String parcelId, int daysIn, double weight, String dimensions) {
         this.parcelId = parcelId;
+        this.daysIn = daysIn;
         this.weight = weight;
         this.dimensions = dimensions;
         this.isProcessed = false;
