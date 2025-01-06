@@ -1,0 +1,453 @@
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Andrew Robertson
+ Customer Id: X919
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Ann Jones
+ Customer Id: X064
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Blair Foster
+ Customer Id: X682
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Bob Dawson
+ Customer Id: X780
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Chris Smith
+ Customer Id: X782
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Dave Jackson
+ Customer Id: X316
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: David Hunter
+ Customer Id: X278
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Donald Murray
+ Customer Id: X720
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Fiona Thoms
+ Customer Id: X475
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Gillian Hamilton
+ Customer Id: X386
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Harry Johnston
+ Customer Id: X857
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Helen Webster
+ Customer Id: X309
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Jack Houston
+ Customer Id: X733
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Jo Hill
+ Customer Id: X285
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Joe Woods
+ Customer Id: X213
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: John Brown
+ Customer Id: X009
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Judy Hilman
+ Customer Id: X904
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Keith Burns
+ Customer Id: X552
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Lily Watson
+ Customer Id: X121
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Lucy Grey
+ Customer Id: X025
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Mary Brown
+ Customer Id: X198
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Pamela Field
+ Customer Id: X521
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Peter White
+ Customer Id: X036
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Robert Murray
+ Customer Id: X606
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Susan Turner
+ Customer Id: X214
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Thomas Young
+ Customer Id: X507
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Tim Smith
+ Customer Id: X020
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Tony Lawson
+ Customer Id: X086
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Ursula Milton
+ Customer Id: X746
+
+Mon Jan 06 01:52:57 GMT 2025 | New customer added: Customer Name: Viola Nicholson
+ Customer Id: X540
+
+Mon Jan 06 01:52:57 GMT 2025 | Customers successfully loaded from the file: Custs.csv
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X009
+ Days In: 9
+ Weight: 1.0
+ Dimensions: 9x9x7
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X020
+ Days In: 1
+ Weight: 1.0
+ Dimensions: 6x4x14
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X025
+ Days In: 7
+ Weight: 1.0
+ Dimensions: 4x9x9
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X036
+ Days In: 8
+ Weight: 4.0
+ Dimensions: 6x9x12
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X064
+ Days In: 8
+ Weight: 4.0
+ Dimensions: 1x8x15
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X086
+ Days In: 7
+ Weight: 4.0
+ Dimensions: 1x7x13
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X121
+ Days In: 3
+ Weight: 7.0
+ Dimensions: 2x3x6
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X198
+ Days In: 9
+ Weight: 4.0
+ Dimensions: 8x0x10
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X213
+ Days In: 4
+ Weight: 8.0
+ Dimensions: 5x2x15
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X214
+ Days In: 1
+ Weight: 8.0
+ Dimensions: 1x1x15
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X278
+ Days In: 5
+ Weight: 3.0
+ Dimensions: 1x0x11
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X285
+ Days In: 1
+ Weight: 4.0
+ Dimensions: 3x1x10
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X309
+ Days In: 1
+ Weight: 2.0
+ Dimensions: 8x5x11
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X316
+ Days In: 9
+ Weight: 5.0
+ Dimensions: 4x0x11
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X386
+ Days In: 9
+ Weight: 1.0
+ Dimensions: 6x5x9
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X475
+ Days In: 4
+ Weight: 3.0
+ Dimensions: 8x1x11
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X507
+ Days In: 5
+ Weight: 3.0
+ Dimensions: 9x8x13
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X521
+ Days In: 6
+ Weight: 4.0
+ Dimensions: 4x4x8
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X540
+ Days In: 9
+ Weight: 2.0
+ Dimensions: 5x4x5
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X552
+ Days In: 4
+ Weight: 5.0
+ Dimensions: 7x8x12
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X606
+ Days In: 8
+ Weight: 8.0
+ Dimensions: 4x2x13
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X682
+ Days In: 3
+ Weight: 6.0
+ Dimensions: 4x4x12
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X720
+ Days In: 4
+ Weight: 2.0
+ Dimensions: 1x3x8
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X733
+ Days In: 6
+ Weight: 6.0
+ Dimensions: 5x7x11
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X746
+ Days In: 4
+ Weight: 4.0
+ Dimensions: 9x5x7
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X780
+ Days In: 4
+ Weight: 1.0
+ Dimensions: 2x5x12
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X782
+ Days In: 5
+ Weight: 3.0
+ Dimensions: 2x7x12
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X857
+ Days In: 2
+ Weight: 6.0
+ Dimensions: 6x3x9
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X904
+ Days In: 4
+ Weight: 1.0
+ Dimensions: 4x9x15
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcel added: Tracking Number: X919
+ Days In: 5
+ Weight: 8.0
+ Dimensions: 7x4x10
+ Processed: false
+
+Mon Jan 06 01:52:57 GMT 2025 | Parcels successfully loaded from the file: Parcels.csv
+Mon Jan 06 01:52:58 GMT 2025 | Depot Application Started.
+Mon Jan 06 01:53:43 GMT 2025 | Customer removed: Customer Name: Andrew Robertson
+ Customer Id: X919
+
+Mon Jan 06 01:53:43 GMT 2025 | Andrew Robertson is processed
+Parcel: X919
+Fee $: 21.0
+Mon Jan 06 01:53:46 GMT 2025 | Customer removed: Customer Name: Ann Jones
+ Customer Id: X064
+
+Mon Jan 06 01:53:46 GMT 2025 | Ann Jones is processed
+Parcel: X064
+Fee $: 13.0
+Mon Jan 06 01:53:48 GMT 2025 | Customer removed: Customer Name: Blair Foster
+ Customer Id: X682
+
+Mon Jan 06 01:53:48 GMT 2025 | Blair Foster is processed
+Parcel: X682
+Fee $: 17.0
+Mon Jan 06 01:53:49 GMT 2025 | Customer removed: Customer Name: Bob Dawson
+ Customer Id: X780
+
+Mon Jan 06 01:53:49 GMT 2025 | Bob Dawson is processed
+Parcel: X780
+Fee $: 7.0
+Mon Jan 06 01:53:50 GMT 2025 | Customer removed: Customer Name: Chris Smith
+ Customer Id: X782
+
+Mon Jan 06 01:53:50 GMT 2025 | Chris Smith is processed
+Parcel: X782
+Fee $: 11.0
+Mon Jan 06 01:53:50 GMT 2025 | Customer removed: Customer Name: Dave Jackson
+ Customer Id: X316
+
+Mon Jan 06 01:53:50 GMT 2025 | Dave Jackson is processed
+Parcel: X316
+Fee $: 15.0
+Mon Jan 06 01:53:51 GMT 2025 | Customer removed: Customer Name: David Hunter
+ Customer Id: X278
+
+Mon Jan 06 01:53:51 GMT 2025 | David Hunter is processed
+Parcel: X278
+Fee $: 11.0
+Mon Jan 06 01:53:52 GMT 2025 | Customer removed: Customer Name: Donald Murray
+ Customer Id: X720
+
+Mon Jan 06 01:53:52 GMT 2025 | Donald Murray is processed
+Parcel: X720
+Fee $: 9.0
+Mon Jan 06 01:53:52 GMT 2025 | Customer removed: Customer Name: Fiona Thoms
+ Customer Id: X475
+
+Mon Jan 06 01:53:52 GMT 2025 | Fiona Thoms is processed
+Parcel: X475
+Fee $: 11.0
+Mon Jan 06 01:53:53 GMT 2025 | Customer removed: Customer Name: Gillian Hamilton
+ Customer Id: X386
+
+Mon Jan 06 01:53:53 GMT 2025 | Gillian Hamilton is processed
+Parcel: X386
+Fee $: 7.0
+Mon Jan 06 01:53:54 GMT 2025 | Customer removed: Customer Name: Harry Johnston
+ Customer Id: X857
+
+Mon Jan 06 01:53:54 GMT 2025 | Harry Johnston is processed
+Parcel: X857
+Fee $: 17.0
+Mon Jan 06 01:53:54 GMT 2025 | Customer removed: Customer Name: Helen Webster
+ Customer Id: X309
+
+Mon Jan 06 01:53:54 GMT 2025 | Helen Webster is processed
+Parcel: X309
+Fee $: 9.0
+Mon Jan 06 01:53:55 GMT 2025 | Customer removed: Customer Name: Jack Houston
+ Customer Id: X733
+
+Mon Jan 06 01:53:55 GMT 2025 | Jack Houston is processed
+Parcel: X733
+Fee $: 17.0
+Mon Jan 06 01:53:55 GMT 2025 | Customer removed: Customer Name: Jo Hill
+ Customer Id: X285
+
+Mon Jan 06 01:53:55 GMT 2025 | Jo Hill is processed
+Parcel: X285
+Fee $: 13.0
+Mon Jan 06 01:53:56 GMT 2025 | Customer removed: Customer Name: Joe Woods
+ Customer Id: X213
+
+Mon Jan 06 01:53:56 GMT 2025 | Joe Woods is processed
+Parcel: X213
+Fee $: 21.0
+Mon Jan 06 01:53:57 GMT 2025 | Customer removed: Customer Name: John Brown
+ Customer Id: X009
+
+Mon Jan 06 01:53:57 GMT 2025 | John Brown is processed
+Parcel: X009
+Fee $: 7.0
+Mon Jan 06 01:53:57 GMT 2025 | Customer removed: Customer Name: Judy Hilman
+ Customer Id: X904
+
+Mon Jan 06 01:53:57 GMT 2025 | Judy Hilman is processed
+Parcel: X904
+Fee $: 7.0
+Mon Jan 06 01:53:58 GMT 2025 | Customer removed: Customer Name: Keith Burns
+ Customer Id: X552
+
+Mon Jan 06 01:53:58 GMT 2025 | Keith Burns is processed
+Parcel: X552
+Fee $: 15.0
+Mon Jan 06 01:53:58 GMT 2025 | Customer removed: Customer Name: Lily Watson
+ Customer Id: X121
+
+Mon Jan 06 01:53:58 GMT 2025 | Lily Watson is processed
+Parcel: X121
+Fee $: 19.0
+Mon Jan 06 01:53:58 GMT 2025 | Customer removed: Customer Name: Lucy Grey
+ Customer Id: X025
+
+Mon Jan 06 01:53:58 GMT 2025 | Lucy Grey is processed
+Parcel: X025
+Fee $: 7.0
+Mon Jan 06 01:53:59 GMT 2025 | Customer removed: Customer Name: Mary Brown
+ Customer Id: X198
+
+Mon Jan 06 01:53:59 GMT 2025 | Mary Brown is processed
+Parcel: X198
+Fee $: 13.0
+Mon Jan 06 01:53:59 GMT 2025 | Customer removed: Customer Name: Pamela Field
+ Customer Id: X521
+
+Mon Jan 06 01:53:59 GMT 2025 | Pamela Field is processed
+Parcel: X521
+Fee $: 13.0
+Mon Jan 06 01:53:59 GMT 2025 | Customer removed: Customer Name: Peter White
+ Customer Id: X036
+
+Mon Jan 06 01:53:59 GMT 2025 | Peter White is processed
+Parcel: X036
+Fee $: 13.0
+Mon Jan 06 01:53:59 GMT 2025 | Customer removed: Customer Name: Robert Murray
+ Customer Id: X606
+
+Mon Jan 06 01:53:59 GMT 2025 | Robert Murray is processed
+Parcel: X606
+Fee $: 21.0
+Mon Jan 06 01:53:59 GMT 2025 | Customer removed: Customer Name: Susan Turner
+ Customer Id: X214
+
+Mon Jan 06 01:53:59 GMT 2025 | Susan Turner is processed
+Parcel: X214
+Fee $: 21.0
+Mon Jan 06 01:53:59 GMT 2025 | Customer removed: Customer Name: Thomas Young
+ Customer Id: X507
+
+Mon Jan 06 01:53:59 GMT 2025 | Thomas Young is processed
+Parcel: X507
+Fee $: 11.0
+Mon Jan 06 01:54:00 GMT 2025 | Customer removed: Customer Name: Tim Smith
+ Customer Id: X020
+
+Mon Jan 06 01:54:00 GMT 2025 | Tim Smith is processed
+Parcel: X020
+Fee $: 7.0
+Mon Jan 06 01:54:00 GMT 2025 | Customer removed: Customer Name: Tony Lawson
+ Customer Id: X086
+
+Mon Jan 06 01:54:00 GMT 2025 | Tony Lawson is processed
+Parcel: X086
+Fee $: 13.0
+Mon Jan 06 01:54:00 GMT 2025 | Customer removed: Customer Name: Ursula Milton
+ Customer Id: X746
+
+Mon Jan 06 01:54:00 GMT 2025 | Ursula Milton is processed
+Parcel: X746
+Fee $: 13.0
+Mon Jan 06 01:54:00 GMT 2025 | Customer removed: Customer Name: Viola Nicholson
+ Customer Id: X540
+
+Mon Jan 06 01:54:00 GMT 2025 | Viola Nicholson is processed
+Parcel: X540
+Fee $: 9.0

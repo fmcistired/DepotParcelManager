@@ -72,10 +72,7 @@ public class Manager {
                     String trackingNo = fields[0].trim();
                     int daysIn = Integer.parseInt(fields[1].trim());
                     double weight = Double.parseDouble(fields[2].trim());
-                    String dimensions = String.join("x",
-                            fields[3].trim(),
-                            fields[4].trim(),
-                            fields[5].trim());
+                    String dimensions = String.join("x", fields[3].trim(), fields[4].trim(), fields[5].trim());
 
                     parcelMap.addParcel(trackingNo, new Parcel(trackingNo, daysIn, weight, dimensions));
                 } else {

@@ -10,52 +10,51 @@ public class MainView extends JFrame {
     private QueueOfCustomers queueOfCustomers;
     private ParcelMap parcelMap;
     private Worker worker;
-    private JFrame frame;
 
-    private JTextArea parcelsArea;
-    private JTextArea queueArea;
+    private DefaultListModel<String> parcelListModel;
+    private JList<String> parcelList;
+    private DefaultListModel<String> customerListModel;
+    private JList<String> customerList;
+
     private JTextField customerField;
     private JTextField parcelField;
     private JTextField feeField;
 
-    // Constructor to Initialize Components
     public MainView(QueueOfCustomers queueOfCustomers, ParcelMap parcelMap, Worker worker) {
         this.queueOfCustomers = queueOfCustomers;
         this.parcelMap = parcelMap;
         this.worker = worker;
 
         setTitle("Depot Parcel Manager");
-        setSize(800, 600);
+        setSize(1000, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
         initializeComponent();
     }
 
-    // Initialize Components
     private void initializeComponent() {
-        // Parcel list panel
-        JPanel parcelPanel = new JPanel();
+        // Initialize Models and Lists
+        parcelListModel = new DefaultListModel<>();
+        parcelList = new JList<>(parcelListModel);
+        customerListModel = new DefaultListModel<>();
+        customerList = new JList<>(customerListModel);
+
+        // Parcel Panel
+        JPanel parcelPanel = new JPanel(new BorderLayout());
         parcelPanel.setBorder(BorderFactory.createTitledBorder("Parcels"));
-        parcelPanel.setLayout(new BorderLayout());
-        parcelsArea = new JTextArea();
-        parcelsArea.setEditable(false);
-        JScrollPane parcelsScroll = new JScrollPane(parcelsArea);
-        parcelPanel.add(parcelsScroll, BorderLayout.CENTER);
+        JScrollPane parcelScrollPane = new JScrollPane(parcelList);
+        parcelPanel.add(parcelScrollPane, BorderLayout.CENTER);
 
-        // Customer queue panel
-        JPanel queuePanel = new JPanel();
+        // Customer Queue Panel
+        JPanel queuePanel = new JPanel(new BorderLayout());
         queuePanel.setBorder(BorderFactory.createTitledBorder("Customer Queue"));
-        queuePanel.setLayout(new BorderLayout());
-        queueArea = new JTextArea();
-        queueArea.setEditable(false);
-        JScrollPane queueScroll = new JScrollPane(queueArea);
-        queuePanel.add(queueScroll, BorderLayout.CENTER);
+        JScrollPane customerScrollPane = new JScrollPane(customerList);
+        queuePanel.add(customerScrollPane, BorderLayout.CENTER);
 
-        // Current processing details panel
-        JPanel processingPanel = new JPanel();
+        // Processing Details Panel
+        JPanel processingPanel = new JPanel(new GridLayout(3, 2));
         processingPanel.setBorder(BorderFactory.createTitledBorder("Processing Details"));
-        processingPanel.setLayout(new GridLayout(3, 2));
         processingPanel.add(new JLabel("Customer:"));
         customerField = new JTextField();
         customerField.setEditable(false);
@@ -69,30 +68,64 @@ public class MainView extends JFrame {
         feeField.setEditable(false);
         processingPanel.add(feeField);
 
-        // Add panels to the layout
-        add(parcelPanel, BorderLayout.WEST);
-        add(queuePanel, BorderLayout.EAST);
-        add(processingPanel, BorderLayout.SOUTH);
+        // Combine Parcel and Queue Panels with SplitPane
+        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        JPanel leftPanel = new JPanel(new GridLayout(2, 1));
+        leftPanel.add(parcelPanel);
+        leftPanel.add(queuePanel);
+        splitPane.setLeftComponent(leftPanel);
+        splitPane.setRightComponent(processingPanel);
 
-        // Button panel
+        // Button Panel
         JPanel buttonPanel = new JPanel();
         JButton processButton = new JButton("Process Next Customer");
-        JButton logButton = new JButton("Save Log");
-
         processButton.addActionListener(e -> processNextCustomer());
-        logButton.addActionListener(e -> saveLog());
-
+        JButton addCustomerButton = new JButton("Add Customer");
+        addCustomerButton.addActionListener(e -> addCustomer());
+        JButton saveLogButton = new JButton("Save Log");
+        saveLogButton.addActionListener(e -> saveLog());
         buttonPanel.add(processButton);
-        buttonPanel.add(logButton);
-        add(buttonPanel, BorderLayout.NORTH);
+        buttonPanel.add(addCustomerButton);
+        buttonPanel.add(saveLogButton);
+
+        // Add Components to Frame
+        add(splitPane, BorderLayout.CENTER);
+        add(buttonPanel, BorderLayout.SOUTH);
+
+        // Initial View Update
+        updateView();
     }
 
-    // Action Methods
     private void processNextCustomer() {
+        if (queueOfCustomers.getQueueSize() == 0) {
+            JOptionPane.showMessageDialog(this, "No customers left in the queue.");
+            return;
+        }
+
         Customer customer = queueOfCustomers.removeCustomer();
-        Parcel parcel = parcelMap.getParcel(customer.getId()); // Assuming customer ID matches parcel ID
+        if (customer == null) {
+            JOptionPane.showMessageDialog(this, "No customers in the queue.");
+            return;
+        }
+
+        Parcel parcel = parcelMap.getParcel(customer.getId());
+        if (parcel == null) {
+            JOptionPane.showMessageDialog(this, "No parcel found for customer: " + customer.getName());
+            return;
+        }
+
         worker.processPackage(customer, parcel);
         updateView();
+    }
+
+    private void addCustomer() {
+        String id = JOptionPane.showInputDialog(this, "Enter Customer ID:");
+        String name = JOptionPane.showInputDialog(this, "Enter Customer Name:");
+        if (id != null && name != null && !id.trim().isEmpty() && !name.trim().isEmpty()) {
+            Customer customer = new Customer(id, name);
+            queueOfCustomers.addCustomer(customer);
+            updateView();
+        }
     }
 
     private void saveLog() {
@@ -101,24 +134,25 @@ public class MainView extends JFrame {
         JOptionPane.showMessageDialog(this, "Log saved to " + logFilePath);
     }
 
-    // Update view to refresh GUI Components
     private void updateView() {
-        // Update parcel list
-        parcelsArea.setText(parcelMap.toString()); // Ensure ParcelMap has a meaningful toString implementation
-
-        // Update customer queue
-        StringBuilder queueText = new StringBuilder();
-        for (Customer customer : queueOfCustomers.getCustomerQueue()) {
-            queueText.append(customer.toString()).append("\n");
+        // Update Parcel List
+        parcelListModel.clear();
+        for (Parcel parcel : parcelMap.getSortedParcelsByWeight()) {
+            parcelListModel.addElement(parcel.toString());
         }
-        queueArea.setText(queueText.toString());
 
-        // Update current processing details
+        // Update Customer List
+        customerListModel.clear();
+        for (Customer customer : queueOfCustomers.getCustomerQueue()) {
+            customerListModel.addElement(customer.toString());
+        }
+
+        // Update Current Processing Details
         Customer currentCustomer = queueOfCustomers.getCustomerQueue().peek();
         if (currentCustomer != null) {
             customerField.setText(currentCustomer.getName());
             Parcel parcel = parcelMap.getParcel(currentCustomer.getId());
-            parcelField.setText(parcel != null ? parcel.toString() : "N/A");
+            parcelField.setText(parcel != null ? parcel.getParcelId() : "N/A");
             feeField.setText(parcel != null ? String.valueOf(parcel.calculateFee()) : "N/A");
         } else {
             customerField.setText("N/A");
@@ -126,5 +160,7 @@ public class MainView extends JFrame {
             feeField.setText("N/A");
         }
     }
-
 }
+
+
+

@@ -2,14 +2,15 @@ package model;
 
 public class Customer {
 
-    private String id;           // Unique identifier for the customer
-    private String name;      // Customer's name
+    private String name;
+    private String id;
 
     // Constructor
-    public Customer(String id, String name) {
-        this.id = id;
-        this.name = name;
+    public Customer(String name, String id) {
+        this.id = id.trim();
+        this.name = name.trim();
     }
+
 
     // Getters and Setters
     public String getId() {
@@ -31,9 +32,8 @@ public class Customer {
     // toString method for a human-readable representation
     @Override
     public String toString() {
-        return  "Customer ==========" + '\n' +
-                "Customer Id: " + id + '\n' +
-                "Customer Name: " + name + '\n';
+        return  "Customer Name: " + name + '\n' +
+                " Customer Id: " + id + '\n';
 
     }
 }

@@ -9,13 +9,13 @@ public class Parcel {
 
     // Constructor
     public Parcel(String parcelId, int daysIn, double weight, String dimensions) {
-        this.parcelId = parcelId;
+        this.parcelId = parcelId.trim();
         this.daysIn = daysIn;
         this.weight = weight;
         this.dimensions = dimensions;
         this.isProcessed = false;
-
     }
+
 
     // Calculation method
     public double calculateFee() {
@@ -50,10 +50,11 @@ public class Parcel {
 
     @Override
     public String toString() {
-        return  "Parcel ==========" + '\n' +
-                "Tracking Number: " + parcelId + '\n' +
-                "Weight: " + weight + '\n' +
-                "Processed: " + isProcessed + '\n';
+        return  "Tracking Number: " + parcelId + '\n' +
+                " Days In: " + daysIn + '\n' +
+                " Weight: " + weight + '\n' +
+                " Dimensions: " + dimensions + '\n' +
+                " Processed: " + isProcessed + '\n';
 
     }
 }

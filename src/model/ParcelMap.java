@@ -38,5 +38,22 @@ public class ParcelMap {
             Log.getInstance().logEvent("Parcel with ID " + id + " does not exist.");
         }
     }
+
+    public List<Parcel> getSortedParcelsByWeight() {
+        return parcelMap.values().stream()
+                .sorted(Comparator.comparingDouble(Parcel::getWeight))
+                .toList();
+    }
+
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (Parcel parcel : parcelMap.values()) {
+            sb.append(parcel.toString()).append("\n");
+        }
+        return sb.toString();
+    }
+
 }
 

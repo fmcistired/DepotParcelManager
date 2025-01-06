@@ -15,8 +15,7 @@ public class Worker {
         }
         double fee = p.calculateFee();
         p.setProcessed(true);
-        Log.getInstance().logEvent( "=============================" + '\n' +
-                                    c.getName() + " is processed" + '\n' +
+        Log.getInstance().logEvent(c.getName() + " is processed" + '\n' +
                                    "Parcel: " + p.getParcelId() + '\n' +
                                    "Fee $: " + fee);
     }
